@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: 140%;
+
+    font-family: 'Montserrat', sans-serif;
+    background-color: #EEEEEE;
+}
+
+main {
+    margin: 0 4% 4% 4%;
+    padding-top: 4%;
+
+    background-color: #fff;
+}
+
+li a {
+    font-size: 16px;
+    text-decoration: none;
+}
+
+h1 {
+    color: #5C9EAD;
+    border-left: 6px solid #5C9EAD;
+
+    font-weight: 700;
+    font-size: 36px;
+
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.menu-items {
+    display: flex;
+    flex-direction: row;
+
+    list-style: none;
+}
+
+.menu-items li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 64px;
+
+    transition: all 0.3s ease 0s;
+
+    background-color: #3A3335;
+    color: #fff;
+}
+
+.menu-items li a:hover {
+    background-color: #5C9EAD;
+}
+
+.menu-items ul,
+.menu-items ol {
+    display: flex;
+}
+
+.menu-items li {
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.menu-items li:hover .submenu>li {
+    display: block;
+}
+
+span.arrow {
+    background-color: inherit;
+}
+
+span.arrow img {
+    width: 50%;
+    background-color: inherit;
+}
+
+.submenu li {
+    display: none;
+    position: relative;
+    top: 0px;
+}
+
+.submenu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+}
+
+
+article p {
+    margin-bottom: 20px;
+}
+
+main li {
+    margin: 20px 0;
+}
+
+main article {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+main * {
+    background-color: inherit;
+}
+
+article img {
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+}
+
+.text:first-child {
+    margin: 0 2%;
+    width: 50%;
+}
+
+.text:last-child {
+    width: 50%;
+    margin: 0 2%;
+}
+
+article:first-child {
+    margin-bottom: 10%;
+}
+
+article ol {
+    margin-left: min(40px, 40px);
+}
+
+li::marker {
+    font-family: 'Fredericka the Great', cursive;
+    font-weight: bold;
+    font-size: 40px;
+    color: #F0544F;
+}
